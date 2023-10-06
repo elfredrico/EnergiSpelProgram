@@ -17,7 +17,7 @@ namespace EnergiSpelProgram
             Console.WriteLine();
             while ((originaldistance > 0) & (runnerEnergy > 1))
             {
-                Console.WriteLine("Ange hastighet (snabbast, snabb, mÃ¥ttlig, lÃ¥ngsam, promenad): ");
+                Console.WriteLine("Ange hastighet (snabbast, snabb, måttlig, långsam, promenad): ");
                 string speedlevel = Console.ReadLine();
                 int energyCost;
                 float distanceCovered;
@@ -26,7 +26,7 @@ namespace EnergiSpelProgram
                     case "snabbast":
                         if (runnerEnergy < 15)
                         {
-                            Console.WriteLine("Du har inte sÃ¥ mycket energi, ange annat val");
+                            Console.WriteLine("Du har inte så mycket energi, ange annat val");
                             Console.WriteLine();
                             continue;
                         }
@@ -45,10 +45,10 @@ namespace EnergiSpelProgram
                         distanceCovered = 1;
                         break;
 
-                    case "mÃ¥ttlig":
+                    case "måttlig":
                         if (runnerEnergy < 8)
                         {
-                            Console.WriteLine("Du har inte sÃ¥ mycket energi, ange annat val");
+                            Console.WriteLine("Du har inte så mycket energi, ange annat val");
                             Console.WriteLine();
                             continue;
                         }
@@ -56,10 +56,10 @@ namespace EnergiSpelProgram
                         distanceCovered = 1;
                         break;
 
-                    case "lÃ¥ngsam":
+                    case "långsam":
                         if (runnerEnergy < 5)
                         {
-                            Console.WriteLine("Du har inte sÃ¥ mycket energi, ange annat val");
+                            Console.WriteLine("Du har inte så mycket energi, ange annat val");
                             Console.WriteLine();
                             continue;
                         }
@@ -70,7 +70,7 @@ namespace EnergiSpelProgram
                     case "promenad":
                         if (runnerEnergy < 2)
                         {
-                            Console.WriteLine("Du har inte sÃ¥ mycket energi, ange annat val");
+                            Console.WriteLine("Du har inte så mycket energi, ange annat val");
                             Console.WriteLine();
                             continue;
                         }
@@ -79,7 +79,7 @@ namespace EnergiSpelProgram
                         break;
 
                     default:
-                        Console.WriteLine("Ogiltig hastighetsnivÃ¥.");
+                        Console.WriteLine("Ogiltig hastighetsnivå.");
                         Console.WriteLine();
                         continue;
                 }
@@ -98,7 +98,7 @@ namespace EnergiSpelProgram
                 Console.WriteLine("Du klarade spelet bra jobbat!");
             }
             else
-                Console.WriteLine("Energin rÃ¤ckte inte fÃ¶r att klara en till omgÃ¥ng");
+                Console.WriteLine("Energin räckte inte för att klara en till omgång");
         }
 
     }
