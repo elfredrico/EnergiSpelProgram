@@ -37,7 +37,7 @@ namespace EnergiSpelProgram
                     case "snabb":
                         if (runnerEnergy < 10)
                         {
-                            Console.WriteLine("Du har inte sÃ¥ mycket energi, ange annat val");
+                            Console.WriteLine("Du har inte så mycket energi, ange annat val");
                             Console.WriteLine();
                             continue;
                         }
