@@ -7,7 +7,7 @@ namespace EnergiSpelProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hur mycket energi vill du bÃ¶rja med? ");
+            Console.WriteLine("Hur mycket energi vill du börja med? ");
             String Energy = Console.ReadLine();
             int runnerEnergy = Int32.Parse(Energy);
             float originaldistance = 10;
